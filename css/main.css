@@ -25,6 +25,11 @@ canvas {
 
 a {
   color: black !important;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: rgb(90, 90, 90) !important;
 }
 
 i {
