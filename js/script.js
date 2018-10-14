@@ -30,5 +30,6 @@ if(window.innerWidth > 400){
 }else{
   pJS_mobile();
   document.getElementById('typing').innerText = text;
+  document.getElementById('cursor').style.display = "none";
   fadeIn();
 }
