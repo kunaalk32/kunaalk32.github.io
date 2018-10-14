@@ -1,9 +1,7 @@
 pJS_desktop = () => particlesJS.load('particles', 'js/particles.json', function() {
-  document.getElementsByTagName("canvas")[0].className += " fadeIn";
 });
 
 pJS_mobile = () => particlesJS.load('particles', 'js/particles_mobile.json', function() {
-  document.getElementsByTagName("canvas")[0].className += " fadeIn";
 });
 
 text = "Hey, I'm Kunaal";
@@ -16,9 +14,6 @@ type = () => {
       setTimeout(type, 50);
   } else {
     fadeIn();
-    if(window.innerWidth > 400){
-      pJS_desktop();
-    }
   }
 }
 
@@ -30,6 +25,7 @@ fadeIn = () => {
 }
 
 if(window.innerWidth > 400){
+  pJS_desktop();
   setTimeout(type, 1500);
 }else{
   pJS_mobile();
