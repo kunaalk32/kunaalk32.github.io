@@ -1,9 +1,9 @@
 pJS_desktop = () => particlesJS.load('particles', 'js/particles.json', function() {
-  document.getElementsByTagName("canvas")[0].class += " fadeIn";
+  document.getElementsByTagName("canvas")[0].className += " fadeIn";
 });
 
 pJS_mobile = () => particlesJS.load('particles', 'js/particles_mobile.json', function() {
-  document.getElementsByTagName("canvas")[0].class += " fadeIn";
+  document.getElementsByTagName("canvas")[0].className += " fadeIn";
 });
 
 text = "Hey, I'm Kunaal";
