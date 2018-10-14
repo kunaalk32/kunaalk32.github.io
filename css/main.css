@@ -23,8 +23,6 @@ canvas {
     z-index: -1;
     margin: 0;
     padding: 0;
-    transition: 1s;
-    opacity: 0;
 }
 
 a {

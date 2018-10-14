@@ -1,9 +1,7 @@
 pJS_desktop = () => particlesJS.load('particles', 'js/particles.json', function() {
-  console.log("loaded");
 });
 
 pJS_mobile = () => particlesJS.load('particles', 'js/particles_mobile.json', function() {
-  console.log("loaded");
 });
 
 text = "Hey, I'm Kunaal";
