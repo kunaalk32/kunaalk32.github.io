@@ -23,11 +23,13 @@ canvas {
     z-index: -1;
     margin: 0;
     padding: 0;
+    transition: 1s;
+    opacity: 0;
 }
 
 a {
   color: black !important;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 
 a:hover {
@@ -38,9 +40,29 @@ i {
   font-size: 3rem;
 }
 
+.cursor {
+  animation: 1.35s blink infinite;
+}
+
 html {
   font-size: 16px;
 }
+
+.icon {
+  opacity: 0;
+  transition: 1s;
+}
+
+.fadeIn {
+  opacity: 1 !important;
+}
+
+@keyframes blink {
+  0%   { opacity: 0; }
+  50%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+
 
 @media (max-width:450px) {
   html {
