@@ -4,14 +4,14 @@ pJS_desktop = () => particlesJS.load('particles', 'js/particles.json', function(
 pJS_mobile = () => particlesJS.load('particles', 'js/particles_mobile.json', function() {
 });
 
-text = "Hey, I'd be a great fit for likely.ai";
+text = "Hey, I'd be a great fit for Likely.Ai";
 
 type = () => {
   var curr = document.getElementById('typing');
   curr_text = curr.innerText;
   curr.innerText += text.charAt(curr_text.length);
   if (curr.innerText.length < text.length) {
-      setTimeout(type, 50);
+      setTimeout(type, 30);
   } else {
     fadeIn();
   }
